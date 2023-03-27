@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDSC-UMIT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="logomain.png"></a>
+            <ul>
+                <li><a href="https://developers.google.com/community/gdsc">Google Developer Student Clubs</a></li>
+                <li><a href="https://gdsc.community.dev/usha-mittal-institute-of-technology-mumbai/">GDSC-Usha Mittal Institue Of Technology, Mumbai</a></li>
+                <!--<li><a href="https://gdsc.community.dev/accounts/login/?next=/usha-mittal-institute-of-technology-mumbai/">Join us</a></li>-->
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>GDSC<br><span>Create,<br>Learn And Grow</span></h2>
+                <p>One of the oldest GDSC community in Mumbai invites you to Create, Learn and Grow together.<br>
+                   The team of GDSC-UMIT consists of 6-core members, 16 workforce members making a team fo 21 
+                   women engineers eager to develop and contribute to the community. 
+                </p>
+            </div>
+            <div class="imgBox">
+             <img src="team.jpg" class="gdsc">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="gdsc-logo1.png" onclick="imgSlider('team.jpg');changeCircleColor('#f5f5f5')"></li>
+            <li><img src="gdsc-logo2.png" onclick="imgSlider('workforce.jpg');changeCircleColor('#f5f5f5')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.linkedin.com/company/gdsc-umit/"><img src="linkedin.png" alt="Linkedin"></a></li>
+            <li><a href="https://medium.com/dsc-umit"><img src="medium (1).png" alt="medium"></a></li>
+            <li><a href="https://www.facebook.com/dsc.umit.3"><img src="facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://www.instagram.com/gdsc_umit/"><img src="instagram.png" alt="Instagram"></a></li>
+            <li><a href="https://twitter.com/DscUmit"><img src="twitter.png" alt="Twitter"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.gdsc').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle= document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
